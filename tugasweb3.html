@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+<body>
+    <div class="wrapper">
+        <!-- Sidebar -->
+        <nav>
+            <div class="sidebar">
+                <div class="logo">
+                    <span class="logo-name"><strong>FiiNeo.io</strong></span>
+                </div>
+    
+                <div class="sidebar-content">
+                    <ul class="lists">
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-th-large icon"></i>
+                            <span class="link">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-chart-bar icon"></i>
+                            <span class="link">Statistics</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-wallet icon"></i>
+                            <span class="link">My Wallet</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-exchange-alt icon"></i>
+                            <span class="link">Transfer</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-envelope icon"></i>
+                            <span class="link">Message</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-heart icon"></i>
+                            <span class="link">Favorite</span>
+                            </a>
+                        </li>
+                        <li class="list">
+                            <a href="#" class="nav-link">
+                            <i class="fas fa-user icon"></i>
+                            <span class="link">Profile</span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="bottom-content">
+                        <ul class="lists">
+                            <li class="list">
+                                <a href="#" class="nav-link">
+                                <i class="fas fa-question-circle icon"></i>
+                                <span class="link">Support</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#" class="nav-link">
+                                <i class="fas fa-cog icon"></i>
+                                <span class="link">Settings</span>
+                                </a>
+                            </li>
+                            <li class="list">
+                                <a href="#" class="nav-link">
+                                <i class="fas fa-sign-out-alt icon"></i>
+                                <span class="link">Log Out</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Main content -->
+        <div class="main-content">
+            <!-- Header with Search Bar -->
+            <header class="header">
+                <h2>
+                    Hello, Indah👋
+                   </h2>
+                   <div class="search">
+                    <i class="fas fa-search">
+                    </i>
+                    <input placeholder="Search" type="text"/>
+                   </div>
+                   <div class="icons">
+                    <i class="fas fa-bell">
+                    </i>
+                    <div class="profile">
+                     <img alt="Profile Picture" height="40" src="foto2.jpeg" width="40"/>
+                    </div>
+            </header>
+
+            <!-- Body Container with Two Columns -->
+            <div class="content-container">
+                <div class="left-column">
+                    <!-- Cards Section -->
+                    <div class="cards-section">
+                        <div class="cards-header">
+                            <h2>My Cards</h2>
+                            <a href="#">Add New</a>
+                        </div>
+                        <div class="cards">
+                            <div class="card card-1">
+                                <div class="card-info">
+                                    <img src="visaa.png" alt="Visa Logo" class="card-logo" />
+                                    <span class="card-chip"><i class="fas fa-wifi"></i></span>
+                                </div>
+                                <div class="card-number">1230 4670 4670</div>
+                                <div class="card-holder">Rakib Kowshar</div>
+                                <div class="card-expiry">03/25</div>
+                            </div>
+                            
+                            <div class="card card-2">
+                                <div class="card-info">
+                                    <span class="card-type"><i class="fas fa-toggle-on"></i></span>
+                                    <span class="card-chip"><i class="fas fa-wifi"></i></span>
+                                </div>
+                                <div class="card-number">4670 4670 1230</div>
+                                <div class="card-holder">Rakib Kowshar</div>
+                                <div class="card-expiry">05/27</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    
+            
+                    <!-- Transactions Section -->
+                    <div class="transactions-section">
+                        <div class="transactions-header">
+                            <h2>Transactions</h2>
+                            <!-- Dropdown untuk memilih Month atau Year -->
+                            <select id="monthYearSelect">
+                                <option value="month">Month</option>
+                                <option value="year">Year</option>
+                            </select>
+                        </div>
+                    
+                        <ul class="transactions-list">
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <!-- Icon/Logo -->
+                                    <img class="transaction-icon" src="foto3.png" alt="Wedding video icon">
+                                    <span class="transaction-name">Wedding video</span>
+                                    <span class="transaction-date">Apr 06, 2021</span>
+                                    <span class="transaction-amount">$3,000</span>
+                                    <!-- Tiga Titik Vertikal -->
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <img class="transaction-icon" src="foto3.png" alt="Passport verification icon">
+                                    <span class="transaction-name">Passport verification</span>
+                                    <span class="transaction-date">Apr 02, 2021</span>
+                                    <span class="transaction-amount">$100</span>
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <img class="transaction-icon" src="foto3.png" alt="RK's Photography icon">
+                                    <span class="transaction-name">RK’s Photography</span>
+                                    <span class="transaction-date">Mar 28, 2021</span>
+                                    <span class="transaction-amount">$470</span>
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <img class="transaction-icon" src="foto3.png" alt="Passport verification icon">
+                                    <span class="transaction-name">Passport verification</span>
+                                    <span class="transaction-date">Apr 02, 2021</span>
+                                    <span class="transaction-amount">$100</span>
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <img class="transaction-icon" src="foto3.png" alt="Grocery Shop icon">
+                                    <span class="transaction-name">Grocery Shop</span>
+                                    <span class="transaction-date">Mar 24, 2021</span>
+                                    <span class="transaction-amount">$186</span>
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                            <li class="transaction-item">
+                                <div class="transaction-details">
+                                    <img class="transaction-icon" src="foto3.png" alt="Flight Ticket icon">
+                                    <span class="transaction-name">Flight Ticket</span>
+                                    <span class="transaction-date">Mar 21, 2021</span>
+                                    <span class="transaction-amount">$860</span>
+                                    <span class="transaction-options">⋮</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="right-column">
+                    <!-- Filter Section -->
+                    <div class="filter-section">
+                        <div class="expense-income">
+                            <button>Expenses</button>
+                            <button>Income</button>
+                        </div>
+                        <div class="time-filters">
+                            <button>D</button>
+                            <button>M</button>
+                            <button>W</button>
+                            <button>All</button>
+                        </div>
+                    </div>
+                    
+            
+                    <!-- Chart Section -->
+                    <div class="chart-section">
+                        <!-- Replace the <p> tag with an <img> tag to display the image -->
+                        <img src="grafik.png" alt="Expenses over time" class="expenses-image" />
+                        <canvas id="chart"></canvas>
+                    </div>
+                    
+            
+                    <!-- History Section -->
+                    <div class="history-section">
+                        <div class="history-header">
+                            <h2>History</h2>
+                            <a href="#">See all</a>
+                        </div>                
+                        <ul class="history-list">
+                            <li>
+                                <div class="history-item">
+                                    <img src="foto3.png" alt="LinkedIn Pro Icon" class="history-icon">
+                                    <div class="history-details">
+                                        <span class="history-name">LinkedIn Pro</span>
+                                        <span class="history-date">10 Mar 2021</span>
+                                    </div>
+                                    <span class="history-amount">-260.80</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="history-item">
+                                    <img src="foto3.png" alt="Figma Plan Icon" class="history-icon">
+                                    <div class="history-details">
+                                        <span class="history-name">Figma plan</span>
+                                        <span class="history-date">09 Mar 2021</span>
+                                    </div>
+                                    <span class="history-amount">-126.50</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="history-item">
+                                    <img src="foto3.png" alt="Instagram Ads Icon" class="history-icon">
+                                    <div class="history-details">
+                                        <span class="history-name">Instagram ads</span>
+                                        <span class="history-date">08 Mar 2021</span>
+                                    </div>
+                                    <span class="history-amount">-108.40</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="history-item">
+                                    <img src="foto3.png" alt="Dribble Pro Icon" class="history-icon">
+                                    <div class="history-details">
+                                        <span class="history-name">Dribble Pro</span>
+                                        <span class="history-date">08 Mar 2021</span>
+                                    </div>
+                                    <span class="history-amount">-108.40</span>
+                                </div>
+                            </li>
+                        </ul>                
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
